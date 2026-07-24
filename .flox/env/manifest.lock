@@ -1,0 +1,322 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "schema-version": "1.12.0",
+    "install": {
+      "age": {
+        "pkg-path": "age"
+      },
+      "betterleaks": {
+        "pkg-path": "betterleaks"
+      },
+      "curl": {
+        "pkg-path": "curl"
+      },
+      "gh": {
+        "pkg-path": "gh"
+      },
+      "git": {
+        "pkg-path": "git"
+      },
+      "jq": {
+        "pkg-path": "jq"
+      },
+      "sops": {
+        "pkg-path": "sops"
+      },
+      "worktrunk": {
+        "pkg-path": "worktrunk"
+      },
+      "wrangler": {
+        "pkg-path": "wrangler"
+      }
+    },
+    "hook": {
+      "on-activate": "  export PATH=\"$FLOX_ENV_PROJECT/scripts:$PATH\"\n"
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "age",
+      "broken": false,
+      "derivation": "/nix/store/yba0k6nn5yi2gr3mxqxjs9yy5ck4dkq4-age-1.3.1.drv",
+      "description": "Modern encryption tool with small explicit keys",
+      "install_id": "age",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "age-1.3.1",
+      "pname": "age",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:58:38.394433Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/piiy1b6dm5khn03yblfrc5hxydhfblvb-age-1.3.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "betterleaks",
+      "broken": false,
+      "derivation": "/nix/store/pj4skwblldmb7gl81vz5yzf3lv3815kl-betterleaks-1.6.1.drv",
+      "description": "Scan code for secrets",
+      "install_id": "betterleaks",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "betterleaks-1.6.1",
+      "pname": "betterleaks",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:58:38.667203Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zkrxvkc0s0m8bmdf402v89d8q0c7jpjw-betterleaks-1.6.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/y0w0b4xy7vp4v777yh6pnkjlf5qp6319-curl-8.21.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "curl-8.21.0",
+      "pname": "curl",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:58:39.303543Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "8.21.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/p4j27d0562xma7y3hpls2lm6v20sbfcv-curl-8.21.0-bin",
+        "debug": "/nix/store/wpy53cxgn1g9nvsz489in3cjyxjqphgc-curl-8.21.0-debug",
+        "dev": "/nix/store/sspqmllb6bwpysc3mvid7lds8j8hy35k-curl-8.21.0-dev",
+        "devdoc": "/nix/store/ylghxlac5whkagpcwmsd1wxskksg3dj7-curl-8.21.0-devdoc",
+        "man": "/nix/store/mxyw3rz7qc00485ajsxsi7daardg03sx-curl-8.21.0-man",
+        "out": "/nix/store/fn0k2qlkgicm4z1s53z6132kkzi5izlr-curl-8.21.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/0wh6avi717rbm1kyxqli0fhx3gdfc80v-gh-2.96.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "gh-2.96.0",
+      "pname": "gh",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:58:40.511740Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.96.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fz2h6h3cgw645ighi31zdjwbkdzmaav7-gh-2.96.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/z4bgb40x2r71vpkilbff5lbybjw4wkka-git-2.54.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "git-2.54.0",
+      "pname": "git",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:58:40.573207Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.54.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/6mj7lgxzx4zzdinr3xvxwa8gd0jrp4jq-git-2.54.0-debug",
+        "doc": "/nix/store/6k14cjwl7a5q78w3dddbm4x49k9g4ywp-git-2.54.0-doc",
+        "out": "/nix/store/1k2lblqlj39azh6wn1sffa2869vrg3mr-git-2.54.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/dfwn0131h6xq4nifhvrw7ivpf9ch9j7m-jq-1.8.2.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "jq-1.8.2",
+      "pname": "jq",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:59:02.220512Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.2",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/1bp02949k0xdihbgphpwbzba1741pknk-jq-1.8.2-bin",
+        "dev": "/nix/store/gfgr11fc6rd0rnbalj2qk69s4jyy5rsb-jq-1.8.2-dev",
+        "doc": "/nix/store/ic07gi5rsjf4nq2ad3h40cpk92bfxb0f-jq-1.8.2-doc",
+        "man": "/nix/store/zcxx34cdvf8xbv26vw2hbgjmsjwxaj9h-jq-1.8.2-man",
+        "out": "/nix/store/mgrb1j6chhwmb7jwd6cjwihbni2szz1d-jq-1.8.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "sops",
+      "broken": false,
+      "derivation": "/nix/store/djr18p779q9sw64n27g85b2axlnh4x5c-sops-3.13.2.drv",
+      "description": "Simple and flexible tool for managing secrets",
+      "install_id": "sops",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "sops-3.13.2",
+      "pname": "sops",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T06:01:17.958856Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.13.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dan7gsrhvnff7w7g5nxyw2kq9kbk9n2h-sops-3.13.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "worktrunk",
+      "broken": false,
+      "derivation": "/nix/store/787n20ff2wgx764cnvqg755n195kk2i7-worktrunk-0.66.0.drv",
+      "description": "Git worktree manager for parallel AI agent workflows",
+      "install_id": "worktrunk",
+      "license": "[ MIT, Apache-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "worktrunk-0.66.0",
+      "pname": "worktrunk",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T06:02:40.954562Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.66.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2wn4xx5gv9w778l17iygf9711xpiw8gg-worktrunk-0.66.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "wrangler",
+      "broken": false,
+      "derivation": "/nix/store/kpsclqlfm8qq9xgim73v6nwm5vjh50gy-wrangler-4.93.0.drv",
+      "description": "Command-line interface for all things Cloudflare Workers",
+      "install_id": "wrangler",
+      "license": "[ MIT, APSL-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "wrangler-4.93.0",
+      "pname": "wrangler",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T06:02:41.098351Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.93.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4m5cjss15ngiihixxpk86p1j4pn0msjp-wrangler-4.93.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}

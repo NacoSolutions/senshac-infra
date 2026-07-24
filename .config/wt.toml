@@ -1,0 +1,6 @@
+[[pre-start]]
+direnv = "direnv allow ."
+hooks = "git config core.hooksPath .githooks"
+
+[[pre-merge]]
+verify = "direnv exec . bash scripts/check"

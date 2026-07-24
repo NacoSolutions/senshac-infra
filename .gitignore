@@ -1,0 +1,17 @@
+.direnv/
+.flox/cache/
+.flox/log/
+.flox/run/
+.env
+.env.local
+.env.pages
+.env.*.local
+.secrets.act
+.sops-age-key.txt
+*.agekey
+secrets/**/*.dec.env
+secrets/**/*.plain.env
+secrets/**/*.local.env
+secrets/**/*.key
+secrets/**/*.pem
+

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+bash -n scripts/check scripts/inventory
+
+tracked_secrets="$(git ls-files -- .env.local .env.pages .secrets.act)"
+if [ -n "$tracked_secrets" ]; then
+  echo "Tracked plaintext secret file: $tracked_secrets" >&2
+  exit 1
+fi
+
+echo "infra repository contracts passed"
