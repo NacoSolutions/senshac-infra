@@ -21,6 +21,9 @@
       "jq": {
         "pkg-path": "jq"
       },
+      "opentofu": {
+        "pkg-path": "opentofu"
+      },
       "sops": {
         "pkg-path": "sops"
       },
@@ -56,6 +59,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:58:38.394433Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -85,6 +89,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:58:38.667203Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -114,6 +119,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:58:39.303543Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -151,6 +157,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:58:40.511740Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -180,6 +187,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:58:40.573207Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -211,6 +219,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T05:59:02.220512Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -232,6 +241,36 @@
       "priority": 5
     },
     {
+      "attr_path": "opentofu",
+      "broken": false,
+      "derivation": "/nix/store/1aiqsi008bn6d7l0lc1fzs0zpsxbf7k7-opentofu-1.12.4.drv",
+      "description": "Tool for building, changing, and versioning infrastructure",
+      "install_id": "opentofu",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "opentofu-1.12.4",
+      "pname": "opentofu",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:59:27.464245Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.12.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ypjys1z1rj0df3aa3rm7xi2p87kcjn8y-opentofu-1.12.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "sops",
       "broken": false,
       "derivation": "/nix/store/djr18p779q9sw64n27g85b2axlnh4x5c-sops-3.13.2.drv",
@@ -246,6 +285,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T06:01:17.958856Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -275,6 +315,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T06:02:40.954562Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -304,6 +345,7 @@
       "rev_date": "2026-07-19T21:52:44Z",
       "scrape_date": "2026-07-21T06:02:41.098351Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
