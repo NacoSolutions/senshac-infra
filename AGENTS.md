@@ -11,3 +11,9 @@ R2, Tina, email, or SOPS private values in tracked files or command output.
 Use one Worktrunk worktree per independently mergeable Seed. Canonical Seeds
 and Terrarium tracking remains in NacoSolutions/senshac until a dedicated
 cross-repository tracker migration changes ownership.
+
+## Agent Workflow
+
+- Run `sd prime` for Seeds context and `sd ready` to find unblocked work.
+- Run `ml prime` before implementation; use `ml record <domain> --type <type>` for durable project learnings.
+- Keep `.seeds/` and `.mulch/` changes focused and commit them with the work they describe.
