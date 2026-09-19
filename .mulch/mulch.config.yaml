@@ -6,7 +6,8 @@
 # strip these comments.
 
 version: '1'
-domains: {}
+domains:
+  platform-cutover: {}
 governance:
   max_entries: 100
   warn_entries: 150
