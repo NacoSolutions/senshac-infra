@@ -1,8 +1,17 @@
 # Senshac Infrastructure
 
 This focused repository owns Cloudflare account resource policy and operations
-for Senshac. It does not own Astro application code, Tina schema/content, or
+for Senshac, including Cloudflare, Podman, Caddy, Tailscale, and Warren
+operations. It does not own Astro application code, Tina schema/content, or
 the normal GitHub-to-Pages website deployment path.
+
+## Agent Guidance
+
+For focused autonomous changes, use [Bounded Warren Task](.agents/skills/bounded-warren-task/SKILL.md).
+Use positive, specific instructions and state the desired outcome. Apply defense
+in depth, gentle coding, direct execution, and token economy: inspect the
+smallest relevant surface, preserve adjacent behavior, make the narrow change,
+and run the bounded validation that proves it.
 
 Run ./scripts/check before merging. ./scripts/inventory is read-only and
 prints only resource names, status, and variable types. Never put Cloudflare,
