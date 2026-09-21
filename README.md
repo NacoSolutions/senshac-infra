@@ -26,3 +26,6 @@ The R2 policy migration requires a separate Cloudflare API token with
 `R2 Storage: Admin Read only`, scoped to `senshac-media-raw` and
 `senshac-media-prod`. The later OpenTofu apply requires a separately approved
 `Admin Read & Write` token. See `docs/r2-import-runbook.md`.
+
+For the Pages, R2, media delivery, DNS, header/redirect, and rollback
+validation contract, see `docs/pages-r2-media-cutover.md`.
