@@ -17,3 +17,7 @@ cross-repository tracker migration changes ownership.
 - Run `sd prime` for Seeds context and `sd ready` to find unblocked work.
 - Run `ml prime` before implementation; use `ml record <domain> --type <type>` for durable project learnings.
 - Keep `.seeds/` and `.mulch/` changes focused and commit them with the work they describe.
+
+## Bounded Warren Tasks
+
+For focused autonomous changes, follow `.agents/skills/bounded-warren-task/SKILL.md`. Write positive, specific instructions with a clear desired outcome; apply defense-in-depth; make gentle, minimal changes; execute directly rather than over-planning; and conserve tokens by inspecting and validating only the relevant surface.
