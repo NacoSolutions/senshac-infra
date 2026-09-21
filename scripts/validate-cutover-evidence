@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Validate a redacted, offline cutover evidence bundle.
+# This command never contacts Cloudflare and never accepts credentials.
+set -euo pipefail
+
+bundle=${1:?usage: $0 EVIDENCE_DIRECTORY}
+[ -d "$bundle" ] || { echo "Evidence directory not found: $bundle" >&2; exit 1; }
+
+for file in pages.json r2.json dns.json smoke.tsv rollback.md; do
+  [ -f "$bundle/$file" ] || { echo "Missing evidence file: $file" >&2; exit 1; }
+done
+
+for file in pages.json r2.json dns.json; do
+  jq empty "$bundle/$file" || { echo "Invalid JSON: $file" >&2; exit 1; }
+done
+
+# Evidence may contain names, IDs, and statuses, but never secret material.
+if grep -Eiq '(api[_-]?token|authorization|secret|password|private[_ -]?key|access[_ -]?key|cookie|set-cookie)' \
+  "$bundle/pages.json" "$bundle/r2.json" "$bundle/dns.json" "$bundle/smoke.tsv" "$bundle/rollback.md"; then
+  echo "Secret-like field found in evidence bundle" >&2
+  exit 1
+fi
+
+# smoke.tsv columns: check, status, redirects, certificate, deployment_commit.
+awk -F '\t' '
+  NR == 1 && $1 == "check" && $2 == "status" && $3 == "redirects" && $4 == "certificate" && $5 == "deployment_commit" { header = 1; next }
+  NR > 1 && NF >= 5 && $2 ~ /^[23][0-9][0-9]$/ && $4 != "" && $5 != "" { rows++ }
+  END {
+    if (!header || !rows) { print "smoke.tsv needs a header and at least one successful check" > "/dev/stderr"; exit 1 }
+  }
+' "$bundle/smoke.tsv"
+
+grep -Eiq 'rollback|restore|revert' "$bundle/rollback.md" || {
+  echo "rollback.md must describe a reviewed restore path" >&2
+  exit 1
+}
+
+echo "cutover evidence bundle passed: $bundle"
