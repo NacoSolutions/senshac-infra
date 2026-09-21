@@ -17,3 +17,12 @@ cross-repository tracker migration changes ownership.
 - Run `sd prime` for Seeds context and `sd ready` to find unblocked work.
 - Run `ml prime` before implementation; use `ml record <domain> --type <type>` for durable project learnings.
 - Keep `.seeds/` and `.mulch/` changes focused and commit them with the work they describe.
+
+## Warren Operations Agent Guidance
+
+This repository guides Cloudflare, Podman, Caddy, Tailscale, and Warren operations. For focused autonomous changes, follow the [Bounded Warren Task skill](.agents/skills/bounded-warren-task/SKILL.md).
+
+- Use positive phrasing and specific instructions; state the desired operational outcome.
+- Apply defense in depth, preserve adjacent behavior, and make gentle, reversible edits.
+- Execute directly with the smallest relevant inspection and bounded validation.
+- Keep work within the named objective and files; use tokens economically.
