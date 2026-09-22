@@ -38,3 +38,12 @@ cross-repository tracker migration changes ownership.
 - Run `sd prime` for Seeds context and `sd ready` to find unblocked work.
 - Run `ml prime` before implementation; use `ml record <domain> --type <type>` for durable project learnings.
 - Keep `.seeds/` and `.mulch/` changes focused and commit them with the work they describe.
+
+## Portable rules and CLI skills
+
+Load `.agents/rules/` for Caveman ultra, direct execution, positive phrasing,
+defense in depth, gentle coding, token economy, and llm-shorthand. Load
+`instruction-specificity.md` when authoring agent guidance. Use the local
+`seeds-cli`, `mulch-cli`, `warren-operations`, and
+`verification-before-completion` skills for tracker, expertise, Warren, and
+completion work. Load role-specific skills for the implementation surface.
