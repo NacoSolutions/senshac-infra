@@ -1,9 +1,14 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
+  # Pull requests are the validation boundary; protected main consumes the
+  # already-validated merge instead of running the same contract again.
   pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
