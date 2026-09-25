@@ -2,6 +2,12 @@
 
 Cloudflare infrastructure contracts and operations for Senshac.
 
+## Development environment
+
+Install [devenv](https://devenv.sh/) and enable direnv for automatic shell
+activation. The environment provides the repository's infrastructure and
+operations tools. Run `devenv shell` when direnv is unavailable.
+
 The web repository remains the source of the Pages application artifact. This
 repository will own account-level policy, infrastructure-as-code, resource
 inventory, and rollback/runbook evidence once individual resources are

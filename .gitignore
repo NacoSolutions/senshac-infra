@@ -1,7 +1,5 @@
 .direnv/
-.flox/cache/
-.flox/log/
-.flox/run/
+.devenv/
 .env
 .env.local
 .env.pages
