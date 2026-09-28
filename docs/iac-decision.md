@@ -4,7 +4,7 @@ Status: accepted for the first migration slice, 2026-07-25.
 
 ## Decision
 
-- Use OpenTofu from FloxHub as the IaC CLI.
+- Use OpenTofu from the repository's devenv/Nixpkgs environment as the IaC CLI.
 - Use the Cloudflare provider with a checked-in version constraint and a
   committed provider lock file once initialization is performed.
 - Store state in a dedicated private R2 bucket through the S3-compatible
@@ -14,9 +14,9 @@ Status: accepted for the first migration slice, 2026-07-25.
   A state lock must be confirmed in a disposable backend test before any
   production import.
 
-This keeps the toolchain in the same Flox environment as the inventory command,
-works with the existing R2 account, and avoids introducing a hosted SaaS state
-service. The state bucket is separate from `senshac-media-raw` and
+This keeps the toolchain in the same reproducible devenv shell as the inventory
+command, works with the existing R2 account, and avoids introducing a hosted
+SaaS state service. The state bucket is separate from `senshac-media-raw` and
 `senshac-media-prod`.
 
 ## Migration sequence

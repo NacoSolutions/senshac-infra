@@ -49,8 +49,9 @@ immutable digest in their `.warren/config.yaml`; do not switch production runs
 to `latest` during incident recovery.
 
 The current validated image is documented in `senshac-runner` and includes
-Node 24, Pi, GitHub CLI, Git, and jq. Heavy Flox/Nix and Cloudflare gates remain
-in the runner repository or GitHub Actions.
+Node 24, Pi, GitHub CLI, Git, and jq. Developer tooling uses devenv, while Nix
+flakes and `dockerTools` build the runtime image. Cloudflare gates remain in the
+runner repository or GitHub Actions.
 
 ## Rollback
 
