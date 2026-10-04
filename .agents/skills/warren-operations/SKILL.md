@@ -5,7 +5,7 @@ Use this skill when changing Warren agent or worktree operations.
 ## Actions
 
 - Read `AGENTS.md` and the relevant `.warren/` files before editing.
-- Preserve `defaultProvider: openrouter` and `defaultModel: openai/gpt-5.6-luna` in `.warren/config.yaml`.
+- Keep `agentImage`, `defaultProvider`, and `defaultModel` out of `.warren/config.yaml`; set image on the Warren instance and provider/model in agent definitions.
 - Run `sd prime` and `sd ready`; use one Worktrunk worktree per independently mergeable Seed.
 - Keep the objective bounded, record durable learnings with `ml record` when they are genuinely useful, and leave unrelated tracker state unchanged.
 
