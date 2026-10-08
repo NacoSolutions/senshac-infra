@@ -12,4 +12,5 @@ secrets/**/*.plain.env
 secrets/**/*.local.env
 secrets/**/*.key
 secrets/**/*.pem
+.engram/
 
